@@ -46,8 +46,9 @@ $White: hsl(0, 0%, 100%);
 .container {
     width: $widthDesktop;
     height: auto;
-    background-image: url("../images/bg-pattern-top-desktop.svg") ,url("../images/bg-pattern-bottom-desktop.svg");
-    background-repeat: no-repeat;
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat:  no-repeat;
+    background-position: top left, bottom right;
     font-family: $spartan;
     display: flex;
     flex-direction: column;
@@ -561,7 +562,7 @@ $White: hsl(0, 0%, 100%);
         max-width: 950px;
         height: auto;
         overflow-x: hidden;
-        background-image: url("../images/bg-pattern-top-desktop.svg") ,url("../images/bg-pattern-bottom-mobile.svg");
+        background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-mobile.svg");
         background-repeat: no-repeat;
     }
 
@@ -583,7 +584,7 @@ $White: hsl(0, 0%, 100%);
         max-width: 900px;
         height: auto;
         overflow-x: hidden;
-       
+
     }
 
     .cards {
@@ -645,9 +646,9 @@ $White: hsl(0, 0%, 100%);
         max-width: 700px;
         height: auto;
         overflow-x: hidden;
-       
+
     }
- 
+
     .title {
         margin-left: 120px;
     }

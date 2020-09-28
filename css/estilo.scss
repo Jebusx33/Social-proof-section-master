@@ -1,0 +1,734 @@
+/*font*/
+/*
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+### Font
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700
+## Typography
+### Body Copy
+- Font size: 15px
+*/
+/*Layout*/
+$widthMobile: 375px;
+$widthDesktop: 1440px;
+/*## Typography
+### Body Copy*/
+$spartan:'Spartan', sans-serif;
+
+/*color*/
+//Primary
+$VeryDarkMagenta: hsl(300, 43%, 22%);
+$SoftPink: hsl(333, 80%, 67%);
+//Neutral
+$DarkGrayishMagenta: hsl(303, 10%, 53%);
+$LightGrayishMagenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    max-width:1440px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.container{
+    width:$widthDesktop;
+    height: auto;
+    background-image: url("../images/bg-pattern-top-desktop.svg");
+    background-repeat:no-repeat;
+    font-family: $spartan;
+   display: flex;
+   flex-direction: column;
+}
+.principal{
+    width: 100%;
+    height: auto;
+    display: flex;
+   flex-direction: row;
+}
+.titlesBox{
+    width: 50%;
+    height: 400px;
+    color:$VeryDarkMagenta;
+}
+.title{
+    margin-top: 133px;
+    margin-left: 166px;
+    width: 435px;
+    height: 250px;
+    
+}
+.title > h1{
+    font-size: 49px;
+    letter-spacing: -2px;
+    line-height:45px;
+}
+.title > p{
+    margin-top: 15px;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    line-height:25px;
+    font-weight: 500;
+    color: $DarkGrayishMagenta;
+}
+.stars{
+    margin-left: 25px;
+    margin-top: 131px;
+    height: 250px;
+    width: 50%;
+   
+}
+.star{
+    height: 55px;
+    width: 422px;
+    background: $LightGrayishMagenta;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+    animation:showText 5s linear;
+}
+
+
+
+.star > p, .star > i{
+ margin-top: 20px;
+ margin-left:7px;
+}
+.star > p{
+margin-left: 30px;
+font-size: 13px;
+font-weight:bold ;
+}
+.fa-star{
+    color: #F59F4C;
+    text-shadow: 0px 0px 2px gray;
+}
+
+
+.star1{
+    animation:showText1 2s linear;
+    
+}
+@keyframes showText1 {
+    from {
+        transform: translatex(200%);
+    }
+
+    to {
+        transform: translatex(0%);
+    }
+}
+@keyframes showhover{
+    from {
+       box-shadow: 0px 0px 0px 5px gray;
+    }
+
+    to {
+       
+    }
+}
+.star2{
+    margin-left: 50px;
+    animation:showText2 4s linear;
+}
+
+@keyframes showText2 {
+    from {
+        transform: translatex(200%);
+    }
+
+    to {
+        transform: translatex(0%);
+    }
+}
+
+
+
+
+
+.star3{
+    margin-left: 100px;
+    animation:showText3 6s linear;
+}
+
+@keyframes showText3 {
+    from {
+        transform: translatex(200%);
+    }
+
+    to {
+        transform: translatex(0%);
+    }
+}
+
+.cardsBox{
+    height: 400px;
+    widows: $widthDesktop;
+    display: flex;
+flex-direction: row;
+margin-left: 166px;
+margin-bottom: 10px;
+}
+.cards{
+margin-top: 35px;
+margin-right: 32px;
+height: 230px;
+width: 350px;
+background: $VeryDarkMagenta;
+border-radius: 10px;
+color:white;
+display: flex;
+flex-direction:column;
+
+}
+
+
+.card1{
+    animation:showCard1 2s linear;
+}
+
+
+@keyframes showCard1 {
+    from {
+        transform: translatey(400%);
+    }
+
+    to {
+        transform: translatey(0%);
+    }
+}
+
+.card2{
+    margin-top: 51px;
+    animation:showCard2 4s linear;
+}
+
+@keyframes showCard2 {
+    from {
+        transform: translatey(400%);
+    }
+
+    to {
+        transform: translatey(0%);
+    }
+}
+.card3{
+    margin-top: 67px;
+    animation:showCard3 6s linear;
+}
+
+@keyframes showCard3 {
+    from {
+        transform: translatey(400%);
+    }
+
+    to {
+        transform: translatey(0%);
+    }
+}
+.headcard{
+display: flex;
+flex-direction: row;
+margin-top: 40px;
+margin-left: 32px;
+}
+.image > img{
+   
+    width: 40px;
+    height: auto;
+    border-radius: 50%; 
+}
+
+.headcard > h3{
+  margin-top: 0px;
+    margin-left:20px;
+    font-size: 13px;
+}
+.headcard > h4{
+   margin-top: 20px;
+   margin-left: -90px ;
+    font-size: 12px;
+    color:#C47EB2;
+    font-weight:300 ;
+   
+}
+.cardParraf {
+    width: 305px;
+    height: auto;
+    margin-left:20px;
+   
+}
+.cardParraf > p{
+    margin-top: 20px;
+    margin-left:15px ;
+    font-size: 13px;
+    line-height:22px;
+    font-weight: lighter;
+    color: $LightGrayishMagenta;
+}
+.attribution{
+    margin-top: 10px;
+    flex-direction: column;
+}
+@media(max-width: 1280px ){
+     .container{
+       width:1280px ; 
+       height: auto;
+       overflow-x:hidden;
+     }
+    .title{
+        margin-top: 133px;
+        margin-left: 100px;
+        
+    }
+    .stars{
+        margin-right: 140px;
+    }
+    .cardsBox{
+        margin-left: 100px;
+    }
+    .attribution{
+        margin-top: 100px;
+    }
+}
+@media(max-width: 1206px ){
+    .container{
+        width:1206px; 
+        height: auto;
+        overflow-x:hidden;
+      }
+    .title{
+        margin-left: 70px;
+        
+    }
+    .stars{
+        margin-right: 356px;
+    }
+    .cardsBox{
+        margin-left: 17px;
+    }
+    .card2{
+        margin-top: 91px;
+    }
+    .card3{
+        margin-top: 157px;
+    }
+}
+
+@media(max-width: 1150px ){
+    .container{
+        width:1150px; 
+        height: auto;
+        overflow-x:hidden;
+      }
+    .title{
+        margin-left: 70px;
+        
+    }
+    .stars{
+        margin-right: 356px;
+    }
+    .cardsBox{
+        margin-left: 17px;
+    }
+ 
+    .card2{
+        margin-top: 151px;
+    }
+    .card3{
+        margin-top: 267px;
+    }
+}
+
+@media(max-width: 1120px ){
+    .container{
+        width:1120px; 
+        height: auto;
+        overflow-x:hidden;
+      }
+      .cards{
+        margin-right: 30px;
+    }
+}
+
+@media(max-width: 1090px ){
+    .container{
+        width:1090px; 
+        height: auto;
+        overflow-x:hidden;
+      }
+    .title{
+        margin-left: 70px;
+        
+    }
+    .stars{
+        margin-right: 356px;
+    }
+    .cardsBox{
+        margin-left: 17px;
+    }
+    .cards{
+        margin-right: 25px;
+    }
+    .card2{
+        margin-top: 151px;
+    }
+    .card3{
+        margin-top: 267px;
+    }
+}
+
+@media(max-width: 1070px ){
+    .container{
+        width:1070px; 
+        height: auto;
+        overflow-x:hidden;
+      }
+      .cards{
+        margin-right: 20px;
+    }
+}
+@media(max-width: 1050px ){
+    .container{
+        width:1050px; 
+        height: auto;
+        overflow-x:hidden;
+      }
+      .cards{
+        margin-right: 15px;
+    }
+    .card2{
+        margin-top: 191px;
+    }
+    .card3{
+        margin-top: 307px;
+    }
+    .attribution{
+        margin-top: 200px;
+    }
+}
+
+@media(max-width: 1030px ){
+    .container{
+        width:1030px; 
+        height: auto;
+        overflow-x:hidden;
+      }
+      .title{
+        margin-left: 10px;
+        
+    }
+    .stars{
+        margin-top: 50px;
+        margin-left: 0px;
+        flex-direction: column;
+    }
+    .cardsBox{
+        margin-left: 5px;
+    }
+      .cards{
+        margin-right: 10px;
+    }
+    .card2{
+        margin-top: 210px;
+    }
+    .card3{
+        margin-top: 327px;
+    }
+}
+
+@media(max-width: 1010px ){
+    .container{
+        width:1010px; 
+        height: auto;
+        overflow-x:hidden;
+      }
+      .cards{
+        margin-right: 0px;
+    }
+    .card2{
+        margin-top: 260px;
+    }
+    .card3{
+        margin-top: 485px;
+    }
+     .attribution{
+        margin-top: 350px;
+    }
+}
+@media(max-width: 1000px ){
+    .container{
+        width:1000px; 
+        height: auto;
+        overflow-x:hidden;
+      }
+      .star{
+        margin-left: 0px;
+    }
+      .cards{
+        margin-right: -35px;
+    }
+    .card2{
+        margin-top: 270px;
+    }
+    .card3{
+        margin-top: 505px;
+    }
+}
+
+@media(max-width: 950px ){
+    .container{
+       max-width:950px; 
+        height: auto;
+        overflow-x:hidden;
+      }
+      .cards{
+        margin-right: -55px;
+    }
+    .card2{
+        margin-top: 270px;
+    }
+    .card3{
+        margin-top: 505px;
+    }
+}
+
+@media(max-width: 900px ){
+    .container{
+       max-width:900px; 
+        height: auto;
+        overflow-x:hidden;
+      }
+      .cards{
+        margin-right: -125px;
+    }
+    .card2{
+        margin-top: 270px;
+    }
+    .card3{
+        margin-top: 505px;
+    }
+}
+
+@media(max-width: 830px ){
+    .container{
+       max-width:830px; 
+        height: auto;
+        overflow-x:hidden;
+       
+      }
+      .principal{
+        flex-direction: column;
+      }
+      .title{
+        flex-direction: column;
+        margin-left: 200px;  
+      }
+      .stars{
+          margin-top: 50px;
+          margin-left: 150px;
+          flex-direction: column;
+      }
+      .cardsBox{
+        flex-direction: column;
+        margin-left: 210px;  
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+  .cards{
+    margin-top: 50px;
+    padding-bottom: 40px;
+  } 
+  .attribution{
+    margin-top: 480px;
+}
+  
+}
+@media(max-width: 700px ){
+    .container{
+        max-width:700px; 
+         height: auto;
+         overflow-x:hidden;
+       }
+       .title{
+        margin-left: 120px;
+    }
+    .stars{
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    .cardsBox{
+        flex-direction: column;
+        margin-left: 150px;  
+      
+      }
+}
+@media(max-width: 660px ){
+    .container{
+        max-width:660px; 
+         height: auto;
+         overflow-x:hidden;
+        
+       }
+       .title{
+           margin-left: 120px;
+       }
+      .stars{
+          margin-top: 50px;
+          margin-left: 100px;
+          flex-direction: column;
+      }
+      .star{
+          margin-left: 0px;
+      }
+      .cardsBox{
+        flex-direction: column;
+        margin-left: 150px;  
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+  .cards{
+    margin-top: 50px;
+    padding-bottom: 40px;
+  } 
+  .attribution{
+    margin-top: 500px;
+}
+  
+}
+
+@media(max-width: 520px ){
+    .container{
+        max-width:520px; 
+         height: auto;
+         overflow-x:hidden;
+        
+       }
+       .title{
+           margin-left: 50px;
+       }
+      .stars{
+          margin-top: 50px;
+          margin-left: 30px;
+          flex-direction: column;
+      }
+     
+      .cardsBox{
+        flex-direction: column;
+        margin-left: 100px;  
+    
+      }
+}
+
+@media(max-width: 460px ){
+    .container{
+        max-width:460px; 
+         height: auto;
+         overflow-x:hidden;
+        
+       }
+       .titlesBox{
+           width: 370px;
+           height: auto;
+       }
+       .title{
+        width: 340px;
+        height: auto;
+         margin-left: 40px;
+       }
+      .stars{
+          margin-top: 50px;
+          margin-left: 30px;
+          flex-direction: column;
+      }
+      .star{
+        height: 55px;
+        width: 320px;
+        padding-left: 30px;
+        padding-right: 5px;
+    }
+      .cardsBox{
+        flex-direction: column;
+        margin-left: 50px;  
+        width:360px ;  
+      }
+      .cards{
+        width:320px ;  
+        height: auto;
+      } 
+      .headcard image{
+          margin-left: 10px;
+      }
+      
+      .cardParraf> p{
+          margin-left: 5px;
+        width: 250px;
+    }
+    .attribution{
+       width: 250px;
+       height: auto;
+       margin-left: 50px;
+        margin-top: 550px;
+    }
+}
+
+@media(max-width: 375px ){
+    .container{
+        max-width:375px; 
+         height: auto;
+         overflow-x:hidden;
+        
+       }
+    
+       .title{
+        width: 340px;
+        height: auto;
+         margin-left: 30px;
+       }
+      .stars{
+          margin-left: 25px; 
+      }
+      .star{
+        padding-left: 5px; 
+    }
+      .cardsBox{
+        margin-left: 25px;   
+      }
+ 
+}
+@media(max-width: 360px ){
+    .container{
+        max-width:360px; 
+         height: auto;
+         overflow-x:hidden;
+        
+       }
+    
+       .title{
+        width: 340px;
+        height: auto;
+         margin-left: 15px;
+       }
+      .stars{
+          margin-left: 15px; 
+      }
+      .star{
+        padding-left: 5px; 
+    }
+      .cardsBox{
+        margin-left: 15px;   
+      }
+ 
+}
